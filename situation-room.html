@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Favicons
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5d51dce6e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="/dashboard.html" class="situation-logo d-flex align-items-center">
+          <div class="d-none d-lg-block socio-node">
+            <span>S</span><span class="o">o</span><span>c</span
+            ><span class="i">i</span><span class="oo">o</span
+            ><span class="n">N</span><span class="ooo">o</span
+            ><span class="d">d</span><span>e</span>
+          </div>
+        </a>
+        <hr />
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+      
+      <div class="pagetitle pagetitle-2 mb-0 d-flex w-100">
+        <a href="/dashboard.html">
+        <h1 class="ms-2 mt-2 text-white">Dashboard</h1>
+        </a>
+        <ul
+          class="d-flex mt-3 mx-auto text-nowrap hide-nav"
+          style="list-style: none"
+        >
+          <li class="ms-4">
+            <a href="/invite-participants.html" >
+                <i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;Post a Situation
+        </a>
+          </li>
+          <li class="ms-4">
+            <a href="/pick-situation.html">
+                <i class="bi bi-arrow-up-square-fill"></i>&nbsp;&nbsp;Pick a Situation
+        </a>
+          </li>
+          <li class="ms-4">
+            <a href="/situation-room.html" class="active">
+                <i class="bi bi-arrow-up-square-fill"></i>&nbsp;&nbsp;Situation room
+        </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <img class="" src="./ASSETS/Vector (7).svg" />
+              <span class="badge bg-danger badge-number">0</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="./assets/Rectangle 4qq.png"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-md-block dropdown-toggle ps-2 text-white"
+                >EN</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span>GER</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span>US</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span>UK</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span>BR</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+    
+
+    
+    
+    <div class=" w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+      <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+      <div class="col-sm-auto p-0 " >
+        <div class="state-process">
+          
+        <div class="ps mt-5">
+          <h4>Process State</h4>
+        </div>
+        <div class="pro-bor">
+        <div class="process-state">
+          <div class="sitution mt-3">
+            <div class="situation-head d-flex justify-content-between justify-content-center flex-sm-row flex-column">
+              <h4>Situation</h4>
+              <div class="">
+                <div
+                  class="collapsed d-flex justify-content-between">
+                  <div>
+
+                      <span>Price:$15</span><br/>
+                      <span>valid Till:23/07/2022</span> 
+                  </div>
+                    <i data-bs-toggle="collapse" data-bs-target="#components-nav" class="bi bi-chevron-down mx-3 "></i>
+                </div>
+      
+              </div>
+              
+            </div>
+            <ul
+                    id="components-nav"
+                    class="nav-content collapse ana-span p-0"
+                    
+                  >
+                    <p class="p-2 situation-border">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat.
+                    </p>
+                    <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
+                  </ul>
+            <div class="situation-head2 mt-3 d-flex justify-content-between justify-content-center flex-sm-row flex-column">
+              <h4>1. Get in Touch</h4>
+              <div class="ana-span">
+                <span class="text-warning">
+                  <i class="bi bi-exclamation-circle m-2"></i>Ongoing</span
+                ><br /><span class="text-success"
+                  ><i class="bi bi-check-circle m-2"></i>Completed</span
+                >
+                <i class="bi  mx-3"></i>
+              </div>
+              
+            </div>
+            <div class="situation-head8 mt-3 d-flex justify-content-between justify-content-center flex-sm-row flex-column">
+              <h4>2. Clarify Sitution</h4>
+              <div class="ana-span ">
+                <div class="nav-link collapsed d-flex justify-content-between ">
+                  <div>
+                    <span class="text-warning"
+                      ><i class="bi bi-exclamation-circle m-2"></i
+                      >Clarifying</span
+                    ><br /><span class="text-success"
+                      ><i class="bi bi-check-circle m-2"></i>Cleared</span
+                    >
+                </div>
+                    <i data-bs-toggle="collapse" data-bs-target="#components-nav-1" class="bi bi-chevron-down mx-3 "></i>
+                </div>
+                
+              </div>
+              
+            </div>
+            <ul id="components-nav-1"
+                  class="nav-content collapse cle ana-span p-2"
+                  data-bs-parent="#sidebar-nav"">
+                    <span class="text-success"
+                      ><i class="bi bi-check-circle m-2"></i>Clarify</span
+                    ><span class="text-danger"
+                      ><i class="bi bi-slash-circle m-2"></i>Clear</span
+                    >
+                  </ul>
+            <div class="situation-head3 mt-3 d-flex justify-content-between justify-content-center flex-sm-row flex-column">
+              <h4>3. Office & Acceptance</h4>
+              <div class="office-span ">
+                <div class="nav-link collapsed d-flex justify-content-between "
+                
+                ><div>
+                  
+                    <span class="text-warning"
+                      ><i class="bi bi-exclamation-circle m-2"></i>Pending
+                      Acceptance</span
+                    ><br /><span class="text-success"
+                      ><i class="bi bi-check-circle m-2"></i>Offer
+                      Accepted </span
+                    ><br />
+                    <span class="text-danger"
+                      ><i class="bi bi-slash-circle m-2"></i>Offer
+                      Decline</span
+                    ><br /><span class="text-danger"
+                      ><i class="bi bi-slash-circle m-2"></i>Offer
+                      Withdrawn</span
+                    >
+                </div>
+                <i data-bs-toggle="collapse" data-bs-target="#components-nav-2" class="bi bi-chevron-down mx-3 "></i>
+                </div>
+              </div>
+              
+            </div>
+            <ul id="components-nav-2"
+                  class="nav-content collapse cle ana-span p-2 "
+                  data-bs-parent="#sidebar-nav"e">
+                    <span class="text-success"
+                      ><i class="bi bi-check-circle m-2"></i>Send
+                      Offer</span
+                    ><span class="text-danger"
+                      ><i class="bi bi-slash-circle m-2"></i>Withdraw
+                      Offer</span
+                    >
+                  </ul>
+            <div class="situation-head4 mt-3 d-flex justify-content-between justify-content-center flex-sm-row flex-column">
+              <h4>4. Situation Analysis</h4>
+              <div class="ana-span">
+                <div class="nav-link collapsed d-flex justify-content-between"
+                >
+                  <div>
+                    <span class="text-warning"
+                      ><i class="bi bi-exclamation-circle m-2"></i
+                      >Working</span
+                    ><br />
+                    <span class="text-danger"
+                      ><i class="bi bi-sign-turn-slight-right m-2 "></i
+                      >Shared & Discussing</span
+                    ><br />
+                    <span class="text-success"
+                      ><i class="bi bi-check-circle m-2"></i>Completed</span
+                    >
+                </div>
+                    
+                <i data-bs-toggle="collapse" data-bs-target="#components-nav-4" class="bi bi-chevron-down mx-3 "></i>
+
+                </div>
+              </div>
+            </div>
+            <ul id="components-nav-4"
+                  class="nav-content collapse mt-2 p-0"
+                  data-bs-parent="#sidebar-nav">
+                    <div class="situation-ana-head p-2">
+                      <h4>Possible Scenarios:</h4>
+                    </div>
+                    <div class="situation-ana p-2">
+                      <p>
+                        <b>Scenario 1:</b>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                      <p>
+                        <b>Scenario 2:</b>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                    </div>
+                    <div class="situation-ana-head mt-2 p-2">
+                      <h4>Indentified Scenarios:</h4>
+                    </div>
+                    <div class="situation-ana p-2">
+                      <p>
+                        <b>Scenario :</b>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                    </div>
+                    <div class="scenario-btn">
+                      <button>
+                        <i class="bi bi-sign-turn-slight-right m-2"></i>Save
+                        Draft
+                      </button>
+                      <button><i class="bi bi-pencil m-2"></i>Edit</button>
+                      <button class="text-right">
+                        <i class="bi bi-sign-turn-slight-right m-2"></i
+                        >Share
+                      </button>
+                    </div>
+                  </ul>
+            <div class="situation-head4 mt-4 d-flex justify-content-between justify-content-center flex-sm-row flex-column">
+              <h4>5. Solution Analysis</h4>
+              <div class="ana-span">
+                <div class="nav-link collapsed ps-4 d-flex justify-content-between"
+                
+                ><div>
+                  
+                    <span class="text-warning"
+                      ><i class="bi bi-exclamation-circle m-2"></i
+                      >Working</span
+                    ><br />
+                    <span class="text-danger"
+                      ><i class="bi bi-sign-turn-slight-right m-2"></i
+                      >Shared & Discussing</span
+                    ><br />
+                    <span class="text-success"
+                      ><i class="bi bi-check-circle m-2"></i>Completed</span
+                    >
+                </div>
+                <i data-bs-toggle="collapse" data-bs-target="#components-nav-5" class="bi bi-chevron-down mx-3 "></i>
+
+                </div>
+              </div>
+            </div>
+            <ul id="components-nav-5"
+                  class="nav-content collapse  mt-2 p-0"
+                  data-bs-parent="#sidebar-nav">
+                    <div class="situation-ana-head  p-2">
+                      <h4>Possible Solution:</h4>
+                    </div>
+                    <div class="situation-ana p-2">
+                      <p>
+                        <b>Solution 1:</b>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                      <p>
+                        <b>Solution 2:</b>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                    </div>
+                    <div class="situation-ana-head mt-2 p-2">
+                      <h4>Best Solution:</h4>
+                    </div>
+                    <div class="situation-ana p-2">
+                      <p>
+                        <b>Solution :</b>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                    </div>
+                    <div class="scenario-btn">
+                      <button><i class="bi bi-pencil m-2"></i>Edit</button>
+                      <button>
+                        <i class="bi bi-sign-turn-slight-right m-2"></i>Save
+                        Draft
+                      </button>
+                      <button class="text-right">
+                        <i class="bi bi-sign-turn-slight-right m-2"></i
+                        >Share
+                      </button>
+                    </div>
+            </ul>
+            <div class="situation-head6 mt-4">
+              <h4>6. Review</h4>
+              <div class="">
+                <div class="nav-link collapsed"
+                data-bs-target="#components-nav-6"
+                data-bs-toggle="collapse">
+                  
+                <i class="bi bi-chevron-down ms-auto"></i>
+                  
+                </div>
+              </div>
+            </div>
+            <ul id="components-nav-6"
+                  class="nav-content collapse mt-2 p-0"
+                  
+                    <div class="review-head">
+                      <div class="review-data pt-3">
+                        <h4>Rating of Solution:</h4>
+                        <div class="">
+                          <div></div>
+                          <input type="checkbox" /><i
+                            class="bi bi-emoji-smile text-success m-2"
+                          ></i>
+                          <span class="text-success">Helpful</span><br />
+                          <input type="checkbox" /><i
+                            class="bi bi-emoji-neutral text-primary m-2"
+                          ></i
+                          ><span class="text-primary"
+                            >Partially Helpful</span
+                          ><br />
+                          <input type="checkbox" /><i
+                            class="bi bi-emoji-frown text-warning m-2"
+                          ></i
+                          ><span class="text-warning">Unhelpful</span>
+                        </div>
+                      </div>
+                      <span class="text-danger ana-span"
+                        ><i class="bi bi-slash-circle m-2"></i>Dispute</span
+                      >
+                    </div>
+                    <div class="review-head2 mt-3">
+                      <div class="review-data">
+                        <h4>Your Experience</h4>
+                        <div class="review-check">
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="review-head3 mt-3 mb-3">
+                      <div class="review-data">
+                        <h4>Counterpart Experience</h4>
+                        <div class="review-check">
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <i class="bi bi-slash-circle text-danger m-2 "></i
+                    ><span class="text-danger ana-span">Dispute</span>
+                  </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    function openRightMenu() {
+      document.getElementById("rightMenu").style.display = "block";
+    }
+    
+    function closeRightMenu() {
+      document.getElementById("rightMenu").style.display = "none";
+    }
+    </script>
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <div class="input-group rounded my-2">
+          <div class="input-with-icon-2 ps-2 form-outline w-auto">
+            <input
+              id="search-input-sidenav"
+              type="search"
+              id="form1"
+              class="input-search"
+              placeholder="search here..."
+            />
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+        <li class="nav-heading">Chats</li>
+        <li class="nav-item">
+          <a class="situation-nav-link" href="#">
+            <img src="./assets/image/Placeholder.svg" alt="" />&nbsp;&nbsp;
+            <div class="">
+              <p class="m-0">
+                Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="text-black-50 "> 12:45 PM </span>
+              </p>
+              <p class="text-black-50 text-nowrap m-0" style="font-size: 12px">
+                Lorem ipsum dolor...
+                <span class="ms-5 badge bg-primary">2</span>
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="situation-nav-link" href="#">
+            <img src="./assets/image/Placeholder (1).svg" alt="" />&nbsp;&nbsp;
+            <div class="">
+              <p class="m-0">
+                Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="text-black-50"> 12:45 PM </span>
+              </p>
+              <p class="text-black-50 text-nowrap m-0" style="font-size: 12px">
+                Lorem ipsum dolor...
+                <span class="ms-5 badge bg-primary">2</span>
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="situation-nav-link" href="#">
+            <img src="./assets/image/Placeholder (2).svg" alt="" />&nbsp;&nbsp;
+            <div class="">
+              <p class="m-0">
+                Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="text-black-50"> 12:45 PM </span>
+              </p>
+              <p class="text-black-50 text-nowrap m-0" style="font-size: 12px">
+                Lorem ipsum dolor...
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="situation-nav-link" href="#">
+            <img src="./assets/image/Placeholder (3).svg" alt="" />&nbsp;&nbsp;
+            <div class="">
+              <p class="m-0">
+                Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="text-black-50"> 12:45 PM </span>
+              </p>
+              <p class="text-black-50 text-nowrap m-0" style="font-size: 12px">
+                Lorem ipsum dolor...
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <!-- End Components Nav -->
+
+        <li class="nav-item">
+          <a class="situation-nav-link" href="#">
+            <img src="./assets/image/Placeholder (4).svg" alt="" />&nbsp;&nbsp;
+            <div class="">
+              <p class="m-0">
+                Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="text-black-50"> 12:45 PM </span>
+              </p>
+              <p class="text-black-50 text-nowrap m-0" style="font-size: 12px">
+                Lorem ipsum dolor...
+              </p>
+            </div>
+          </a>
+        </li>
+        <!-- End Forms Nav -->
+
+        <li class="nav-item">
+          <a class="situation-nav-link" href="#">
+            <img src="./assets/image/Placeholder (5).svg" alt="" />&nbsp;&nbsp;
+            <div class="">
+              <p class="m-0">
+                Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="text-black-50"> 12:45 PM </span>
+              </p>
+              <p class="text-black-50 text-nowrap m-0" style="font-size: 12px">
+                Lorem ipsum dolor...
+              </p>
+            </div>
+          </a>
+        </li>
+        <!-- End Tables Nav -->
+
+        <li class="nav-item">
+          <a class="situation-nav-link" href="#">
+            <img src="./assets/image/Placeholder (6).svg" alt="" />&nbsp;&nbsp;
+            <div class="">
+              <p class="m-0">
+                Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="text-black-50 text-nowrap"> 12:45 PM </span>
+              </p>
+              <p class="text-black-50 text-nowrap m-0" style="font-size: 12px">
+                Lorem ipsum dolor...
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <footer id="footer" class="footers ms-0">
+        <div class="copyright text-center">
+          <img
+            class="logout-logo picture"
+            src="./ASSETS/Group 7668.svg"
+          />&nbsp;&nbsp;&nbsp;Log Out
+        </div>
+      </footer>
+    </aside>
+
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <!-- End Page Title -->
+
+      <section class="section dashboard">
+       
+        <div class="row">
+          <div class="col-lg-7 p-0">
+            <div class="usonline">
+            <div class="chat-box">
+              <div class="un bd-highlight">
+                <img src="./assets/image/Rectangle 4.svg" alt="" />
+                <div class="uoo  bd-highlight">
+                  <h4 style="font-family: 'Poppins';
+                  font-style: normal;
+                  color: #303972;
+                  font-weight: 700;
+                  font-size: 24px;
+                  line-height: 36px;" class="">Username</h4>
+                  
+                  <p class="bd-highlight"><img src="./assets/image/Ellipse 6.svg" alt="">&nbsp;Online</p>
+                </div>
+                
+                  <button class="ms-auto bd-highlight d-lg-none w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+                
+              </div>
+            </div>
+
+            <div class="chat-box2">
+              <div class="chat-text">
+                <div class="other">
+                  <p>Hello Nabila!</p>
+                  <p>Can i see your history lesson homework?</p>
+                  <span>12.45 PM</span>
+                </div>
+                <div class="you">
+                  <p>Hello Nabila!</p>
+                  <p>Can i see your history lesson homework?</p>
+                  <span>12.45 PM</span>
+                </div>
+              </div>
+              <div class="chat-text">
+                <div class="other">
+                  <p>Hello Nabila!</p>
+                  <p>Can i see your history lesson homework?</p>
+                  <span>12.45 PM</span>
+                </div>
+                <div class="you">
+                  <p>Hello Nabila!</p>
+                  <p>Can i see your history lesson homework?</p>
+                  <span>12.45 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="send-msg">
+            <div class="msg-type">
+              <div><input type="text" placeholder="write your message" /></div>
+
+              <div class="input-img d-flex">
+                <!-- <img src="./assets/image/in.png" alt="" /> -->
+                <div class="input-butt ">
+                  <i class="fa-sharp fa-solid fa-light fa-paperclip"></i
+                  ><button class="text-right">
+                    send<i class="bi bi-send"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 p-0 ">
+          <div class="state-process">
+            
+          <div class="ps mt-5">
+            <h4>Process State</h4>
+          </div>
+          <div class="pro-bor">
+          <div class="process-state">
+            <div class="sitution mt-3">
+              <div class="situation-head d-flex justify-content-between">
+                <h4>Situation</h4>
+                <div class="">
+                  <div
+                    class="collapsed ps-5"
+                  >
+                    
+                      <span>Price:$15</span><br /><span
+                        >valid Till:23/07/2022</span
+                      > 
+                  </div>
+                </div>
+                <i data-bs-toggle="collapse" data-bs-target="#components-nav" class="bi bi-chevron-down mx-3 "></i>
+              </div>
+              <ul
+                      id="components-nav"
+                      class="nav-content collapse ana-span p-0 "
+                      
+                    >
+                      <p class="p-2 situation-border">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.
+                      </p>
+                      <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
+                    </ul>
+              <div class="situation-head2 mt-3">
+                <h4>1. Get in Touch</h4>
+                <div class="ana-span">
+                  <span class="text-warning">
+                    <i class="bi bi-exclamation-circle m-2"></i>Ongoing</span
+                  ><br /><span class="text-success"
+                    ><i class="bi bi-check-circle m-2"></i>Completed</span
+                  >
+                </div>
+                <i class="bi  mx-3  "></i>
+              </div>
+              <div class="situation-head8 mt-3">
+                <h4>2. Clarify Sitution</h4>
+                <div class="ana-span">
+                  <div class="nav-link collapsed px-5">
+                    
+                      <span class="text-warning"
+                        ><i class="bi bi-exclamation-circle m-2"></i
+                        >Clarifying</span
+                      ><br /><span class="text-success"
+                        ><i class="bi bi-check-circle m-2"></i>Cleared</span
+                      >
+                      
+                    
+                  </div>
+                  
+                </div>
+                <i data-bs-toggle="collapse" data-bs-target="#components-nav-1" class="bi bi-chevron-down mx-3 "></i>
+              </div>
+              <ul id="components-nav-1"
+                    class="nav-content collapse cle ana-span p-2"
+                    data-bs-parent="#sidebar-nav"">
+                      <span class="text-success"
+                        ><i class="bi bi-check-circle m-2"></i>Clarify</span
+                      ><span class="text-danger"
+                        ><i class="bi bi-slash-circle m-2"></i>Clear</span
+                      >
+                    </ul>
+              <div class="situation-head3 mt-3 d-flex justify-content-between">
+                <h4>3. Office & Acceptance</h4>
+                <div class="office-span text-nowrap ">
+                  <div class="nav-link collapsed "
+                  
+                  >
+                    
+                      <span class="text-warning"
+                        ><i class="bi bi-exclamation-circle m-2"></i>Pending
+                        Acceptance</span
+                      ><br /><span class="text-success"
+                        ><i class="bi bi-check-circle m-2"></i>Offer
+                        Accepted </span
+                      ><br />
+                      <span class="text-danger"
+                        ><i class="bi bi-slash-circle m-2"></i>Offer
+                        Decline</span
+                      ><br /><span class="text-danger"
+                        ><i class="bi bi-slash-circle m-2"></i>Offer
+                        Withdrawn</span
+                      >
+                      
+                  </div>
+                </div>
+                <i data-bs-toggle="collapse" data-bs-target="#components-nav-2" class="bi bi-chevron-down mx-3 "></i>
+              </div>
+              <ul id="components-nav-2"
+                    class="nav-content collapse cle ana-span p-2 "
+                    data-bs-parent="#sidebar-nav"e">
+                      <span class="text-success"
+                        ><i class="bi bi-check-circle m-2"></i>Send
+                        Offer</span
+                      ><span class="text-danger"
+                        ><i class="bi bi-slash-circle m-2"></i>Withdraw
+                        Offer</span
+                      >
+                    </ul>
+              <div class="situation-head4 mt-3">
+                <h4 class="text-nowrap">4. Situation Analysis</h4>
+                <div class="ana-span">
+                  <div class="nav-link collapsed ps-4 text-nowrap"
+                  >
+                    
+                      <span class="text-warning"
+                        ><i class="bi bi-exclamation-circle m-2"></i
+                        >Working</span
+                      ><br />
+                      <span class="text-danger"
+                        ><i class="bi bi-sign-turn-slight-right m-2 "></i
+                        >Shared & Discussing</span
+                      ><br />
+                      <span class="text-success"
+                        ><i class="bi bi-check-circle m-2"></i>Completed</span
+                      >
+                      
+                    
+                  </div>
+                </div>
+                <i data-bs-toggle="collapse" data-bs-target="#components-nav-4" class="bi bi-chevron-down mx-3 "></i>
+              </div>
+              <ul id="components-nav-4"
+                    class="nav-content collapse mt-2 p-0"
+                    data-bs-parent="#sidebar-nav">
+                      <div class="situation-ana-head p-2">
+                        <h4>Possible Scenarios:</h4>
+                      </div>
+                      <div class="situation-ana p-2">
+                        <p>
+                          <b>Scenario 1:</b>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. Ut enim
+                          ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p>
+                          <b>Scenario 2:</b>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. Ut enim
+                          ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                      </div>
+                      <div class="situation-ana-head mt-2 p-2">
+                        <h4>Indentified Scenarios:</h4>
+                      </div>
+                      <div class="situation-ana p-2">
+                        <p>
+                          <b>Scenario :</b>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. Ut enim
+                          ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                      </div>
+                      <div class="scenario-btn">
+                        <button>
+                          <i class="bi bi-sign-turn-slight-right m-2"></i>Save
+                          Draft
+                        </button>
+                        <button><i class="bi bi-pencil m-2"></i>Edit</button>
+                        <button class="text-right">
+                          <i class="bi bi-sign-turn-slight-right m-2"></i
+                          >Share
+                        </button>
+                      </div>
+                    </ul>
+              <div class="situation-head4 mt-4">
+                <h4>5. Solution Analysis</h4>
+                <div class="ana-span">
+                  <div class="nav-link collapsed ps-4"
+                  
+                  >
+                    
+                      <span class="text-warning"
+                        ><i class="bi bi-exclamation-circle m-2"></i
+                        >Working</span
+                      ><br />
+                      <span class="text-danger"
+                        ><i class="bi bi-sign-turn-slight-right m-2"></i
+                        >Shared & Discussing</span
+                      ><br />
+                      <span class="text-success"
+                        ><i class="bi bi-check-circle m-2"></i>Completed</span
+                      >
+                    
+                  </div>
+                </div>
+                <i data-bs-toggle="collapse" data-bs-target="#components-nav-5" class="bi bi-chevron-down mx-3 "></i>
+              </div>
+              <ul id="components-nav-5"
+                    class="nav-content collapse  mt-2 p-0"
+                    data-bs-parent="#sidebar-nav">
+                      <div class="situation-ana-head  p-2">
+                        <h4>Possible Solution:</h4>
+                      </div>
+                      <div class="situation-ana p-2">
+                        <p>
+                          <b>Solution 1:</b>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. Ut enim
+                          ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p>
+                          <b>Solution 2:</b>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. Ut enim
+                          ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                      </div>
+                      <div class="situation-ana-head mt-2 p-2">
+                        <h4>Best Solution:</h4>
+                      </div>
+                      <div class="situation-ana p-2">
+                        <p>
+                          <b>Solution :</b>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. Ut enim
+                          ad minim veniam, quis nostrud exercitation ullamco
+                          laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                      </div>
+                      <div class="scenario-btn">
+                        <button><i class="bi bi-pencil m-2"></i>Edit</button>
+                        <button>
+                          <i class="bi bi-sign-turn-slight-right m-2"></i>Save
+                          Draft
+                        </button>
+                        <button class="text-right">
+                          <i class="bi bi-sign-turn-slight-right m-2"></i
+                          >Share
+                        </button>
+                      </div>
+              </ul>
+              <div class="situation-head6 mt-4">
+                <h4>6. Review</h4>
+                <div class="">
+                  <div class="nav-link collapsed"
+                  data-bs-target="#components-nav-6"
+                  data-bs-toggle="collapse">
+                    
+                  <i class="bi bi-chevron-down ms-auto"></i>
+                    
+                  </div>
+                </div>
+              </div>
+              <ul id="components-nav-6"
+                    class="nav-content collapse mt-2 p-0"
+                    
+                      <div class="review-head">
+                        <div class="review-data pt-3">
+                          <h4>Rating of Solution:</h4>
+                          <div class="">
+                            <div></div>
+                            <input type="checkbox" /><i
+                              class="bi bi-emoji-smile text-success m-2"
+                            ></i>
+                            <span class="text-success">Helpful</span><br />
+                            <input type="checkbox" /><i
+                              class="bi bi-emoji-neutral text-primary m-2"
+                            ></i
+                            ><span class="text-primary"
+                              >Partially Helpful</span
+                            ><br />
+                            <input type="checkbox" /><i
+                              class="bi bi-emoji-frown text-warning m-2"
+                            ></i
+                            ><span class="text-warning">Unhelpful</span>
+                          </div>
+                        </div>
+                        <span class="text-danger ana-span"
+                          ><i class="bi bi-slash-circle m-2"></i>Dispute</span
+                        >
+                      </div>
+                      <div class="review-head2 mt-3">
+                        <div class="review-data">
+                          <h4>Your Experience</h4>
+                          <div class="review-check">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review-head3 mt-3 mb-3">
+                        <div class="review-data">
+                          <h4>Counterpart Experience</h4>
+                          <div class="review-check">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <i class="bi bi-slash-circle text-danger m-2 "></i
+                      ><span class="text-danger ana-span">Dispute</span>
+                    </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+        
+         
+      </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        Copyright 2022 <strong><span>@SocioNode</span></strong
+        >| All Rights Reserved
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

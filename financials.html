@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5d51dce6e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="/dashboard.html" class="logo d-flex align-items-center">
+          <div class="d-none d-lg-block socio-node">
+            <span>S</span><span class="o">o</span><span>c</span
+            ><span class="i">i</span><span class="oo">o</span
+            ><span class="n">N</span><span class="ooo">o</span
+            ><span class="d">d</span><span>e</span>
+          </div>
+        </a>
+        <hr />
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <div class="pagetitle mb-0 d-flex w-100">
+        <h1 class="ms-2 mt-2 text-white text-nowrap">My Financials</h1>
+        <ul
+          class="d-flex mt-3 mx-auto text-nowrap hide-nav"
+          style="list-style: none"
+        >
+        <li class="ms-4">
+            <a href="/invite-participants.html">
+              <i class="bi bi-pencil-fill"></i>&nbsp;&nbsp;Post a Situation
+            </a>
+          </li>
+          <li class="ms-4">
+            <a href="/pick-situation.html">
+              <i class="bi bi-arrow-up-square-fill"></i>&nbsp;&nbsp;Pick a
+              Situation
+            </a>
+          </li>
+          <li class="ms-4">
+            <a href="/situation-room.html">
+              <i class="bi bi-arrow-down-square-fill"></i>&nbsp;&nbsp;Situation
+              room
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#"> </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <img src="./ASSETS/Vector (7).svg" />
+              <span class="badge bg-danger badge-number">0</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="./assets/Rectangle 4qq.png"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-md-block dropdown-toggle ps-2 text-white"
+                >EN</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span>GER</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span>US</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span>UK</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span>BR</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#components-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <img src="./ASSETS/Vector.svg" alt="" />&nbsp;&nbsp;<span
+              >My Situation</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="components-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="/drafted.html">
+                <span>Drafted</span>
+              </a>
+            </li>
+            <li>
+              <a href="/published.html">
+                <span>Published</span>
+              </a>
+            </li>
+            <li>
+              <a href="/in-process.html">
+                <span>In-Process</span>
+              </a>
+            </li>
+            <li>
+              <a href="/completed.html">
+                <span>Completed</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Components Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#forms-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <img src="./ASSETS/Vector (1).svg" alt="" />&nbsp;&nbsp;<span
+              >My Advice</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="forms-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="/advice-process.html">
+                <span>In-Progress</span>
+              </a>
+            </li>
+            <li>
+              <a href="/advice-completed.html">
+                <span>Completed</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Forms Nav -->
+
+        <li class="nav-item">
+          <a
+            class="active nav-link collapsed"
+            data-bs-target="#tables-nav"
+            href="/financials.html"
+          >
+            <img src="./ASSETS/Vector (2).svg" alt="" />&nbsp;&nbsp;<span
+              >My Financials</span
+            >
+          </a>
+        </li>
+        <!-- End Tables Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#charts-nav"
+            href="/account-settings.html"
+          >
+            <img src="./ASSETS/Vector (3).svg" alt="" />&nbsp;&nbsp;<span
+              >Account Settings</span
+            >
+          </a>
+        </li>
+        <div class="d-sm-none">
+          <li class="nav-heading">Dashboard</li>
+          <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              data-bs-target="#charts-nav"
+              href="/invite-participants.html"
+            >
+              <img
+                class="bg-secondary"
+                src="./assets/Vector (4).svg"
+                alt=""
+              />&nbsp;&nbsp;<span>Post a Situation</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              data-bs-target="#charts-nav"
+              href="/pick-situation.html"
+            >
+              <img
+                class="bg-secondary"
+                src="./assets/Vector (5).svg"
+                alt=""
+              />&nbsp;&nbsp;<span>Pick a Situation</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link collapsed"
+              data-bs-target="#charts-nav"
+              href="/situation-room.html"
+            >
+              <img
+                class="bg-secondary"
+                src="./assets/Vector (6).svg"
+                alt=""
+              />&nbsp;&nbsp;<span>Situation Room</span>
+            </a>
+          </li>
+        </div>
+      </ul>
+      <footer id="footer" class="footers ms-0">
+        <div class="copyright text-center">
+          <img
+            class="logout-logo picture"
+            src="./ASSETS/Group 7668.svg"
+          />&nbsp;&nbsp;&nbsp;Log Out
+        </div>
+      </footer>
+    </aside>
+
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <!-- End Page Title -->
+
+      <section class="section dashboard">
+        <ul class="nav" id="myTab" role="tablist">
+          <li class="nav-item mb-4" role="presentation">
+            <a
+              class="active bg-transparent text-black ps-0 me-5 text-nowrap financial-navbar-item"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+            >
+              My Income
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="financial-navbar-item bg-transparent text-black ps-0 me-5 text-nowrap"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              My Expense
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <div class="table-responsive">
+              <table class="financial-table shadow">
+                <thead class="table-head">
+                  <tr class="text-black">
+                    <th class="text-nowrap financial-th" scope="col">
+                      Paid By
+                    </th>
+                    <th class="text-nowrap financial-th" scope="col">Amount</th>
+                    <th class="text-nowrap financial-th" scope="col">
+                      Paid Time
+                    </th>
+                    <th class="text-nowrap financial-th" scope="col">
+                      Situation and Solution
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tr-1">
+                    <td class="financial-td">
+                      <img
+                        src="./assets/Rectangle 4qq.png"
+                      />&nbsp;&nbsp;Username
+                    </td>
+
+                    <td class="financial-td">$10</td>
+
+                    <td class="financial-td">23rd june, 15.10 pm</td>
+                    <td class="financial-td">Lorem ipsum dolor sit amet...</td>
+                  </tr>
+
+                  <tr class="tr-1">
+                    <td class="financial-td">
+                      <img
+                        class="text-nowrap"
+                        src="./assets/Rectangle 4qq.png"
+                      />&nbsp;&nbsp;Username
+                    </td>
+
+                    <td class="financial-td">$10</td>
+
+                    <td class="financial-td">23rd june, 15.10 pm</td>
+                    <td class="financial-td">Lorem ipsum dolor sit amet...</td>
+                  </tr>
+
+                  <tr class="tr-1">
+                    <td class="financial-td">
+                      <img
+                        src="./assets/Rectangle 4qq.png"
+                      />&nbsp;&nbsp;Username
+                    </td>
+
+                    <td class="financial-td">$10</td>
+
+                    <td class="financial-td">23rd june, 15.10 pm</td>
+                    <td class="financial-td">Lorem ipsum dolor sit amet...</td>
+                  </tr>
+                  <tr class="tr-1">
+                    <td class="financial-td">
+                      <img
+                        src="./assets/Rectangle 4qq.png"
+                      />&nbsp;&nbsp;Username
+                    </td>
+
+                    <td class="financial-td">$10</td>
+
+                    <td class="financial-td">23rd june, 15.10 pm</td>
+                    <td class="financial-td">Lorem ipsum dolor sit amet...</td>
+                  </tr>
+                  <tr>
+                    <td class="financial-td">
+                      <img
+                        src="./assets/Rectangle 4qq.png"
+                      />&nbsp;&nbsp;Username
+                    </td>
+
+                    <td class="financial-td">$10</td>
+
+                    <td class="financial-td">23rd june, 15.10 pm</td>
+                    <td class="financial-td">Lorem ipsum dolor sit amet...</td>
+                  </tr>
+                  <tr>
+                    <td class="financial-td"></td>
+                    <td class="financial-td"></td>
+                    <td class="financial-td"></td>
+                    <td class="financial-td"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="text-center">
+              <button class="financial-button">View More</button>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card financial-card border-0 h-100">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <p>Total Income:</p>
+                      <h4 class="text-black">$10000</h4>
+                    </div>
+                    <!-- <h5 class="text-center">Chart title goes here</h5> -->
+                    <!-- <img src="./assets/Stacked column 3 categories.svg" /> -->
+                    <!-- Column Chart -->
+                    <div id="columnChart1"></div>
+
+                    <script>
+                      document.addEventListener("DOMContentLoaded", () => {
+                        new ApexCharts(
+                          document.querySelector("#columnChart1"),
+                          {
+                            series: [
+                              {
+                                name: "Point 01",
+                                data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+                              },
+                              {
+                                name: "Point 02",
+                                data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
+                              },
+                              {
+                                name: "Point 03",
+                                data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
+                              },
+                            ],
+                            chart: {
+                              type: "bar",
+                              height: 350,
+                            },
+                            plotOptions: {
+                              bar: {
+                                horizontal: false,
+                                columnWidth: "55%",
+                                endingShape: "rounded",
+                              },
+                            },
+                            dataLabels: {
+                              enabled: false,
+                            },
+                            stroke: {
+                              show: true,
+                              width: 2,
+                              colors: ["transparent"],
+                            },
+                            xaxis: {
+                              categories: [
+                                "Jan",
+                                "Feb",
+                                "Mar",
+                                "Apr",
+                                "May",
+                                "Jun",
+                              ],
+                            },
+                            yaxis: {
+                              title: {
+                                text: "$ (thousands)",
+                              },
+                            },
+                            fill: {
+                              opacity: 1,
+                            },
+                            tooltip: {
+                              y: {
+                                formatter: function (val) {
+                                  return "$ " + val + " thousands";
+                                },
+                              },
+                            },
+                          }
+                        ).render();
+                      });
+                    </script>
+                    <!-- End Column Chart -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card card-one border-0 h-100">
+                  <div class="card-body">
+                    <p>
+                      Income by Time
+                      Period&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <img src="./assets/Vectorcalender.svg" />
+                    </p>
+                    <!-- <img src="./assets/Date Picker.svg" /> -->
+                    <!-- <div class="container"> -->
+                    <!-- <div class="row"> -->
+
+                    <div class="monthPicker">
+                      <div class="monthPicker-top">
+                        <button class="monthPicker-top-action btn">
+                          <span class="fa fa-angle-left"></span>
+                        </button>
+                        <button class="monthPicker-top-current btn p-0">
+                          <h5>Janurary</h5>
+                        </button>
+                        <button class="monthPicker-top-action btn">
+                          <span class="fa fa-angle-right"></span>
+                        </button>
+                      </div>
+                      <div class="monthPicker-body">
+                        <!-- <span class="monthPicker-body-month">Mon</span> -->
+                        <p class="day">
+                          <span class="monthPicker-body-month">Mon</span
+                          ><span class="monthPicker-body-month">Tue</span
+                          ><span class="monthPicker-body-month">Wed</span
+                          ><span class="monthPicker-body-month">Thu</span
+                          ><span class="monthPicker-body-month">Fri</span
+                          ><span class="monthPicker-body-month">Sat</span
+                          ><span class="monthPicker-body-month">Sun</span>
+                        </p>
+                        <p>
+                          <span class="monthPicker-body-month">31</span>
+                          <span class="monthPicker-body-month">1</span>
+                          <span class="monthPicker-body-month">2</span>
+                          <span class="monthPicker-body-month">3</span>
+                          <span class="monthPicker-body-month">4</span>
+                          <span class="monthPicker-body-month">5</span>
+                          <span class="monthPicker-body-month">6</span>
+                        </p>
+                        <p>
+                          <span class="monthPicker-body-month">7</span>
+                          <span class="monthPicker-body-month">8</span>
+                          <span class="monthPicker-body-month">9</span>
+                          <span class="monthPicker-body-month">10</span>
+                          <span class="monthPicker-body-month">12</span>
+                          <span class="monthPicker-body-month">12</span>
+                          <span class="monthPicker-body-month">13</span>
+                        </p>
+                        <p>
+                          <span class="monthPicker-body-month">14</span>
+                          <span class="monthPicker-body-month">15</span>
+                          <span class="monthPicker-body-month">16</span>
+                          <span class="monthPicker-body-month">17</span>
+                          <span class="monthPicker-body-month">18</span>
+                          <span class="monthPicker-body-month">19</span>
+                          <span class="monthPicker-body-month">20</span>
+                        </p>
+                        <p>
+                          <span class="monthPicker-body-month">21</span>
+                          <span class="monthPicker-body-month">22</span>
+                          <span class="monthPicker-body-month">23</span>
+                          <span class="monthPicker-body-month">24</span>
+                          <span class="monthPicker-body-month">25</span>
+                          <span class="monthPicker-body-month">26</span>
+                          <span class="monthPicker-body-month">27</span>
+                        </p>
+                        <p>
+                          <span class="monthPicker-body-month">28</span>
+                          <span class="monthPicker-body-month">29</span>
+                          <span class="monthPicker-body-month">31</span>
+                          <span class="monthPicker-body-month">1</span>
+                          <span class="monthPicker-body-month">2</span>
+                          <span class="monthPicker-body-month">3</span>
+                          <span class="monthPicker-body-month">4</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- </div> -->
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 card-one">
+                <div class="card card-one border-0 h-100">
+                  <div class="card-body">
+                    <p>Income from</p>
+                    <div class="table-responsive">
+                      <table class="financial-table shadow">
+                        <thead class="table-head-1">
+                          <tr class="text-black">
+                            <th class="text-nowrap th-class" scope="col">
+                              Name
+                            </th>
+                            <th class="text-nowrap th-class" scope="col">
+                              Amount
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="tr-1">
+                            <td class="td-class">
+                              <img
+                                class="img-width"
+                                src="./assets/Rectangle 4qq.png"
+                              />&nbsp;&nbsp;Username
+                            </td>
+
+                            <td class="td-class">$10</td>
+                          </tr>
+
+                          <tr class="tr-1">
+                            <td class="td-class">
+                              <img
+                                class="text-nowrap img-width"
+                                src="./assets/Rectangle 4qq.png"
+                              />&nbsp;&nbsp;Username
+                            </td>
+
+                            <td class="td-class">$10</td>
+                          </tr>
+
+                          <tr class="tr-1">
+                            <td class="td-class">
+                              <img
+                                class="img-width"
+                                src="./assets/Rectangle 4qq.png"
+                              />&nbsp;&nbsp;Username
+                            </td>
+
+                            <td class="td-class">$10</td>
+                          </tr>
+                          <tr class="tr-1">
+                            <td class="td-class">
+                              <img
+                                class="img-width"
+                                src="./assets/Rectangle 4qq.png"
+                              />&nbsp;&nbsp;Username
+                            </td>
+
+                            <td class="td-class">$10</td>
+                          </tr>
+                          <tr>
+                            <td class="td-class">
+                              <img
+                                class="img-width"
+                                src="./assets/Rectangle 4qq.png"
+                              />&nbsp;&nbsp;Username
+                            </td>
+
+                            <td class="td-class">$10</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="table-responsive">
+              <table class="financial-table shadow">
+                <thead class="table-head">
+                  <tr class="text-black">
+                    <th class="text-nowrap financial-th" scope="col">
+                      Paid By
+                    </th>
+                    <th class="text-nowrap financial-th" scope="col">Amount</th>
+                    <th class="text-nowrap financial-th" scope="col">
+                      Paid Time
+                    </th>
+                    <th class="text-nowrap financial-th" scope="col">
+                      Situation and Solution
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tr-1">
+                    <td class="financial-td">
+                      <img
+                        src="./assets/Rectangle 4qq.png"
+                      />&nbsp;&nbsp;Username
+                    </td>
+
+                    <td class="financial-td">$10</td>
+
+                    <td class="financial-td">23rd june, 15.10 pm</td>
+                    <td class="financial-td">Lorem ipsum dolor sit amet...</td>
+                  </tr>
+
+                  <tr class="tr-1">
+                    <td class="financial-td">
+                      <img
+                        class="text-nowrap"
+                        src="./assets/Rectangle 4qq.png"
+                      />&nbsp;&nbsp;Username
+                    </td>
+
+                    <td class="financial-td">$10</td>
+
+                    <td class="financial-td">23rd june, 15.10 pm</td>
+                    <td class="financial-td">Lorem ipsum dolor sit amet...</td>
+                  </tr>
+
+                  <tr class="tr-1">
+                    <td class="financial-td">
+                      <img
+                        src="./assets/Rectangle 4qq.png"
+                      />&nbsp;&nbsp;Username
+                    </td>
+
+                    <td class="financial-td">$10</td>
+
+                    <td class="financial-td">23rd june, 15.10 pm</td>
+                    <td class="financial-td">Lorem ipsum dolor sit amet...</td>
+                  </tr>
+                  <tr class="tr-1">
+                    <td class="financial-td">
+                      <img
+                        src="./assets/Rectangle 4qq.png"
+                      />&nbsp;&nbsp;Username
+                    </td>
+
+                    <td class="financial-td">$10</td>
+
+                    <td class="financial-td">23rd june, 15.10 pm</td>
+                    <td class="financial-td">Lorem ipsum dolor sit amet...</td>
+                  </tr>
+                  <tr>
+                    <td class="financial-td">
+                      <img
+                        src="./assets/Rectangle 4qq.png"
+                      />&nbsp;&nbsp;Username
+                    </td>
+
+                    <td class="financial-td">$10</td>
+
+                    <td class="financial-td">23rd june, 15.10 pm</td>
+                    <td class="financial-td">Lorem ipsum dolor sit amet...</td>
+                  </tr>
+                  <tr>
+                    <td class="financial-td"></td>
+                    <td class="financial-td"></td>
+                    <td class="financial-td"></td>
+                    <td class="financial-td"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="text-center">
+              <button class="financial-button">View More</button>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card border-0 h-100">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <p>Total Expense:</p>
+                      <h4>$10000</h4>
+                    </div>
+                    <!-- <h5 class="text-center">Chart title goes here</h5> -->
+                    <!-- <img src="./assets/Stacked column 3 categories.svg" /> -->
+                    <!-- Column Chart -->
+                    <div id="columnChart"></div>
+
+                    <script>
+                      document.addEventListener("DOMContentLoaded", () => {
+                        new ApexCharts(document.querySelector("#columnChart"), {
+                          series: [
+                            {
+                              name: "Point 01",
+                              data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+                            },
+                            {
+                              name: "Point 02",
+                              data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
+                            },
+                            {
+                              name: "Point 03",
+                              data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
+                            },
+                          ],
+                          chart: {
+                            type: "bar",
+                            height: 350,
+                          },
+                          plotOptions: {
+                            bar: {
+                              horizontal: false,
+                              columnWidth: "55%",
+                              endingShape: "rounded",
+                            },
+                          },
+                          dataLabels: {
+                            enabled: false,
+                          },
+                          stroke: {
+                            show: true,
+                            width: 2,
+                            colors: ["transparent"],
+                          },
+                          xaxis: {
+                            categories: [
+                              "Jan",
+                              "Feb",
+                              "Mar",
+                              "Apr",
+                              "May",
+                              "Jun",
+                            ],
+                          },
+                          yaxis: {
+                            title: {
+                              text: "$ (thousands)",
+                            },
+                          },
+                          fill: {
+                            opacity: 1,
+                          },
+                          tooltip: {
+                            y: {
+                              formatter: function (val) {
+                                return "$ " + val + " thousands";
+                              },
+                            },
+                          },
+                        }).render();
+                      });
+                    </script>
+                    <!-- End Column Chart -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card card-one border-0 h-100">
+                  <div class="card-body">
+                    <p>
+                      Expense by Time
+                      Period&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <img src="./assets/Vectorcalender.svg" />
+                    </p>
+                    <!-- <img src="./assets/Date Picker.svg" /> -->
+                    <!-- <div class="container"> -->
+                    <!-- <div class="row"> -->
+
+                    <div class="monthPicker">
+                      <div class="monthPicker-top">
+                        <button class="monthPicker-top-action btn">
+                          <span class="fa fa-angle-left"></span>
+                        </button>
+                        <button class="monthPicker-top-current btn p-0">
+                          <h5>Janurary</h5>
+                        </button>
+                        <button class="monthPicker-top-action btn">
+                          <span class="fa fa-angle-right"></span>
+                        </button>
+                      </div>
+                      <div class="monthPicker-body">
+                        <!-- <span class="monthPicker-body-month">Mon</span> -->
+                        <p class="day">
+                          <span class="monthPicker-body-month">Mon</span
+                          ><span class="monthPicker-body-month">Tue</span
+                          ><span class="monthPicker-body-month">Wed</span
+                          ><span class="monthPicker-body-month">Thu</span
+                          ><span class="monthPicker-body-month">Fri</span
+                          ><span class="monthPicker-body-month">Sat</span
+                          ><span class="monthPicker-body-month">Sun</span>
+                        </p>
+                        <p>
+                          <span class="monthPicker-body-month">31</span>
+                          <span class="monthPicker-body-month">1</span>
+                          <span class="monthPicker-body-month">2</span>
+                          <span class="monthPicker-body-month">3</span>
+                          <span class="monthPicker-body-month">4</span>
+                          <span class="monthPicker-body-month">5</span>
+                          <span class="monthPicker-body-month">6</span>
+                        </p>
+                        <p>
+                          <span class="monthPicker-body-month">7</span>
+                          <span class="monthPicker-body-month">8</span>
+                          <span class="monthPicker-body-month">9</span>
+                          <span class="monthPicker-body-month">10</span>
+                          <span class="monthPicker-body-month">12</span>
+                          <span class="monthPicker-body-month">12</span>
+                          <span class="monthPicker-body-month">13</span>
+                        </p>
+                        <p>
+                          <span class="monthPicker-body-month">14</span>
+                          <span class="monthPicker-body-month">15</span>
+                          <span class="monthPicker-body-month">16</span>
+                          <span class="monthPicker-body-month">17</span>
+                          <span class="monthPicker-body-month">18</span>
+                          <span class="monthPicker-body-month">19</span>
+                          <span class="monthPicker-body-month">20</span>
+                        </p>
+                        <p>
+                          <span class="monthPicker-body-month">21</span>
+                          <span class="monthPicker-body-month">22</span>
+                          <span class="monthPicker-body-month">23</span>
+                          <span class="monthPicker-body-month">24</span>
+                          <span class="monthPicker-body-month">25</span>
+                          <span class="monthPicker-body-month">26</span>
+                          <span class="monthPicker-body-month">27</span>
+                        </p>
+                        <p>
+                          <span class="monthPicker-body-month">28</span>
+                          <span class="monthPicker-body-month">29</span>
+                          <span class="monthPicker-body-month">31</span>
+                          <span class="monthPicker-body-month">1</span>
+                          <span class="monthPicker-body-month">2</span>
+                          <span class="monthPicker-body-month">3</span>
+                          <span class="monthPicker-body-month">4</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- </div> -->
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 card-one">
+                <div class="card card-one border-0 h-100">
+                  <div class="card-body">
+                    <p>Expense To</p>
+                    <div class="table-responsive">
+                      <table class="financial-table shadow">
+                        <thead class="table-head-1">
+                          <tr class="text-black">
+                            <th class="text-nowrap th-class" scope="col">
+                              Name
+                            </th>
+                            <th class="text-nowrap th-class" scope="col">
+                              Amount
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="tr-1">
+                            <td class="td-class">
+                              <img
+                                class="img-width"
+                                src="./assets/Rectangle 4qq.png"
+                              />&nbsp;&nbsp;Username
+                            </td>
+
+                            <td class="td-class">$10</td>
+                          </tr>
+
+                          <tr class="tr-1">
+                            <td class="td-class">
+                              <img
+                                class="text-nowrap img-width"
+                                src="./assets/Rectangle 4qq.png"
+                              />&nbsp;&nbsp;Username
+                            </td>
+
+                            <td class="td-class">$10</td>
+                          </tr>
+
+                          <tr class="tr-1">
+                            <td class="td-class">
+                              <img
+                                class="img-width"
+                                src="./assets/Rectangle 4qq.png"
+                              />&nbsp;&nbsp;Username
+                            </td>
+
+                            <td class="td-class">$10</td>
+                          </tr>
+                          <tr class="tr-1">
+                            <td class="td-class">
+                              <img
+                                class="img-width"
+                                src="./assets/Rectangle 4qq.png"
+                              />&nbsp;&nbsp;Username
+                            </td>
+
+                            <td class="td-class">$10</td>
+                          </tr>
+                          <tr>
+                            <td class="td-class">
+                              <img
+                                class="img-width"
+                                src="./assets/Rectangle 4qq.png"
+                              />&nbsp;&nbsp;Username
+                            </td>
+
+                            <td class="td-class">$10</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="financial-footer">
+      <div class="copyright">
+        Copyright 2022 <strong><span>@SocioNode</span></strong
+        >| All Rights Reserved
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
